@@ -1,0 +1,9 @@
+app:
+    build: ./
+    restart: always
+    ports:
+        - 3000:3000
+    volumes:
+        - ./app:/srv/www/app
+    env_file:
+        - ./app/.env
